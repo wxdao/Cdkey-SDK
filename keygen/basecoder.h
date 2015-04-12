@@ -39,7 +39,7 @@ public:
             {
                 t |= i & 1 << (7 - j) ? 1 : 0;
                 ++l;
-                if (l == 5)
+                if (l == unit)
                 {
                     ret += mapper.mapNA(t);
                     t = l = 0;
